@@ -1,2 +1,6 @@
-
 .DS_Store
+apiprov-app.iml
+ApiProv-Source/.mvn/
+ApiProv-Source/.idea
+target/
+*.iml

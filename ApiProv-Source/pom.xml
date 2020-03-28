@@ -1,0 +1,14 @@
+<project>
+
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>at.floriandulzky.apiprov</groupId>
+  <artifactId>apiprov-app</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+  <modules>
+      <module>main</module>
+      <module>plugin</module>
+  </modules>
+
+</project>
