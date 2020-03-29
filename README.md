@@ -3,7 +3,7 @@
 ApiProv is lightweight Api Gateway or something you can provide APIs with. 
 
 * Authenticate / Authorize your APIs
-* Rate limit your APIs
+* Set rate limiting to your APIs
 * Provide APIs from different protocols
 * Use as an api gateway for your microservices
 * Use as loadBalancer for API-Request or/and for your microservices
