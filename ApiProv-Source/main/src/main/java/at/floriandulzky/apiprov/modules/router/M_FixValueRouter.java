@@ -12,7 +12,7 @@ public class M_FixValueRouter implements Router {
     @Override
     public Object handle(Map<String, List<String>> httpHeaders, Map<String, List<String>> queryParams, String body,
                          String method, Properties properties, String uri) throws RouterException {
-        return properties.get("data").toString();
+        return properties.get("data");
     }
 
     @Override
