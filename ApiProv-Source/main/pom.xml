@@ -46,6 +46,12 @@
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-resteasy-jaxb</artifactId>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/io.quarkus/quarkus-rest-client -->
+    <dependency>
+      <groupId>org.jboss.resteasy</groupId>
+      <artifactId>resteasy-client</artifactId>
+      <version>4.5.3.Final</version>
+    </dependency>
     <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-mongodb-client</artifactId>
