@@ -1,10 +1,10 @@
 # ApiProv
 
-ApiProv is lightweigt ApiGateway or something you can provide APIs with. With ApiProv you can provide an API from different protocols. 
+ApiProv is lightweight Api Gateway or something you can provide APIs with. 
 
-Furhter you can use ApiProv as an api gateway for your microservices.
-
-Also use ApiProv as loadBalancer for API-Request or for your microservices.
+* provide APIs from different protocols
+* use as an api gateway for your microservices
+* use as loadBalancer for API-Request or/and for your microservices
 
 ## Run ApiProv
 ...
