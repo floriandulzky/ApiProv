@@ -27,7 +27,7 @@ public class AppControllerService {
                 this.handlePreFilters(api, httpHeaders, uriInfo, body, method);
                 Object routerResult = this.handleRouter(api, httpHeaders, uriInfo, body, method);
                 return Response.ok(this.handlePostFilter(api, routerResult)).build();
-            } catch(PreFilterException ex){
+            } catch(PreFilterException ex) {
                 return Response.status(ex.getStatus(), ex.getMessage()).build();
             } catch(Exception ex){
                 ex.printStackTrace();
