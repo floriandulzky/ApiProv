@@ -31,7 +31,7 @@ ApiProv is lightweight Api Gateway or something you can provide APIs with.
 * Post Filter
 
 ## Architecture
-![Image of Yaktocat](https://github.com/floriandulzky/ApiProv/blob/master/Documentation/ApiProvArchitecture.png?raw=true)
+![Architecture](https://github.com/floriandulzky/ApiProv/blob/master/Documentation/ApiProvArchitecture.png?raw=true)
 
 ## How to implent a Plugin
 ...
