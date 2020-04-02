@@ -26,6 +26,7 @@ ApiProv is lightweight Api Gateway or something you can provide APIs with.
   * REST Router
   * Fix Value Router
   * Remote-Shell script Router
+  * MySQL Router
 * Post Filter
 
 ## Architecture
