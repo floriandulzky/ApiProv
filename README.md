@@ -22,6 +22,7 @@ ApiProv is lightweight Api Gateway or something you can provide APIs with.
 ## Main Modules
 * Pre Filter
   * Api Token Authentication
+  * Rate Limit per Api and Token
 * Router
   * REST Router
   * Fix Value Router
