@@ -9,7 +9,13 @@ ApiProv is lightweight Api Gateway or something you can provide APIs with.
 * Use as loadBalancer for API-Request or/and for your microservices
 
 ## Run ApiProv
+### Docker
 ...
+### from Source
+* Fork / download Repo
+* Change direcotry to "ApiProv-Source/main" (`cd ApiProv-Source/main`)
+* run `./mvnw quarkus:dev` to run the quarkus aplication in development mode.
+
 
 ## Main Modules
 * Pre Filter
