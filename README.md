@@ -13,8 +13,8 @@ ApiProv is lightweight Api Gateway or something you can provide APIs with.
 ...
 ### From Source
 * install mongo DB ( `docker run --name apiprov-mongo -27017:27017 mongo` )
-** Add Database "apiprov"
-** Add Collection "api" in "apiprov" database.
+  * Add Database "apiprov"
+  * Add Collection "api" in "apiprov" database.
 * Fork / download Repo
 * Change direcotry to "ApiProv-Source/main" ( `cd ApiProv-Source/main` )
 * run `./mvnw quarkus:dev` to run the quarkus aplication in development mode.
