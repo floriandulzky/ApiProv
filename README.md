@@ -12,7 +12,7 @@ ApiProv is lightweight Api Gateway or something you can provide APIs with.
 ### Docker
 ...
 ### From Source
-* install mongo DB ( `docker run --name apiprov-mongo -27017:27017 mongo` )
+* install mongo DB ( `docker run --name apiprov-mongo -d -p27017:27017 mongo` )
   * Add Database "apiprov"
   * Add Collection "api" in "apiprov" database.
 * Fork / download Repo
