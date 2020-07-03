@@ -1,6 +1,9 @@
 .DS_Store
 apiprov-app.iml
-ApiProv-Source/.mvn/
-ApiProv-Source/.idea
+ApiProv-Core/.mvn/
+ApiProv-Core/.idea
+ApiProv-GUI/.idea
+ApiProv-GUI/frontend/.idea
+ApiProv-GUI/frontend/node_modules
 target/
 *.iml
