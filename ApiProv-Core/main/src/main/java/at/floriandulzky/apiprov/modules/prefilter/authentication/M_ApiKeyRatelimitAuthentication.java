@@ -54,7 +54,6 @@ public class M_ApiKeyRatelimitAuthentication extends M_ApiKeyAuthentication {
                 document.put("count", count);
                 mongoDatabase.getCollection("moduledata").insertOne(document);
             }
-
         } catch (MongoException ex) {
             throw new PreFilter500Exception("Something went wrong");
         }

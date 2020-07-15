@@ -14,7 +14,7 @@ const routes = [
     path: "/",
     component: () => import("./views/app"), //webpackChunkName app
     // beforeEnter: authenticate,
-    redirect: "/app/pages/blank",
+    redirect: "/app/pages/myApiProvs",
 
     children: [
      
@@ -53,6 +53,10 @@ const routes = [
           {
             path: "blank",
             component: () => import("./views/app/pages/blank")
+          },
+          {
+            path: "myApiProvs",
+            component: () => import("./views/app/pages/myApiProvs")
           },
           
         ]

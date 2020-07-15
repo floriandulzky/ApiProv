@@ -7,3 +7,5 @@ ApiProv-GUI/frontend/.idea
 ApiProv-GUI/frontend/node_modules
 target/
 *.iml
+
+.idea/

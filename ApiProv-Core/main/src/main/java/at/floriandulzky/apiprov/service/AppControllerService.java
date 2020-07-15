@@ -4,6 +4,7 @@ import at.floriandulzky.apiprov.plugin.postfilter.PostFilter;
 import at.floriandulzky.apiprov.plugin.prefilter.PreFilter;
 import at.floriandulzky.apiprov.plugin.prefilter.exceptions.PreFilterException;
 import at.floriandulzky.apiprov.plugin.router.Router;
+import at.floriandulzky.apiprov.utils.ApiUtils;
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.model.Filters;
 import org.bson.Document;
@@ -41,7 +42,7 @@ public class AppControllerService {
     private void handlePreFilters(Document api, HttpHeaders httpHeaders, UriInfo uriInfo, String body, String method)
             throws Exception {
         List<String> prefilters = (ArrayList<String>) api.get("prefilter");
-        Properties properties = this.createProperties((ArrayList<Document>) api.get("properties"));
+        Properties properties = ApiUtils.createProperties((ArrayList<Document>) api.get("properties"));
         Map<String, List<String>> httpHeaderMap = this.createHttpHeaders(httpHeaders);
         Map<String, List<String>> queryParams = this.createQueryParams(uriInfo);
         for(String prefilter : prefilters){
@@ -58,7 +59,7 @@ public class AppControllerService {
         Class clazz = Class.forName(router);
         return ((Router)clazz.getDeclaredConstructor().newInstance()).handle(
                 this.createHttpHeaders(httpHeaders), this.createQueryParams(uriInfo), body, method,
-                this.createProperties((ArrayList<Document>) api.get("properties")), uriInfo.getRequestUri().toASCIIString()
+                ApiUtils.createProperties((ArrayList<Document>) api.get("properties")), uriInfo.getRequestUri().toASCIIString()
         );
     }
 
@@ -96,20 +97,6 @@ public class AppControllerService {
             return result;
         }
         return null;
-    }
-
-    private Properties createProperties(Iterable<Document> documents){
-        Properties properties = new Properties();
-        for(Document doc : documents){
-            for(String key : doc.keySet()){
-                if(doc.get(key) instanceof Iterable){
-                    properties.putAll(this.createProperties((Iterable<Document>) doc.get(key)));
-                } else {
-                    properties.put(key, doc.get(key));
-                }
-            }
-        }
-        return properties;
     }
 
 }
